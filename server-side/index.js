@@ -4,7 +4,9 @@ const cors = require("cors");
 
 app.use(cors({ 
     origin: ['http://localhost:5173','https://younglabs-innovations-ochre.vercel.app/'],
-    credentials: true 
+    credentials: true,
+    methods: "GET,POST,PUT,DELETE,OPTIONS", // Allowed HTTP methods
+    allowedHeaders: "Content-Type,Authorization" // Allowed headers
 }));
 
 app.use(express.json()); //Parses incoming JSON payloads.
