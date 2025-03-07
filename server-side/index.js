@@ -2,7 +2,10 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ 
+    origin: ['http://localhost:5173','https://younglabs-innovations-ochre.vercel.app/'],
+    credentials: true 
+}));
 
 app.use(express.json()); //Parses incoming JSON payloads.
 
@@ -21,3 +24,4 @@ const PORT = 5000;
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+module.exports = app;
