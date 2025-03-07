@@ -22,14 +22,6 @@ app.get("/api/greet", (req, res)=>{
     res.status(200).json({message: `"Hello, ${name}! Welcome to Younglabs.`})
 
 })
-//for vercel deployement
-app.options("*", (req, res) => {
-    res.setHeader("Access-Control-Allow-Origin", "https://younglabs-innovations-ochre.vercel.app");
-    res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
-    res.setHeader("Access-Control-Allow-Headers", "Content-Type,Authorization");
-    res.setHeader("Access-Control-Allow-Credentials", "true");
-    res.sendStatus(204);
-});
 
 const PORT = 5000;
 app.listen(PORT, () => {
