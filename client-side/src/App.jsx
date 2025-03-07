@@ -6,7 +6,7 @@ function App() {
   const [value, setValue] = useState(""); //value is data from backend
 
   const submit = async() =>{
-    const res = await fetch(`http://localhost:5000/api/greet?name=${textValue}`,{
+    const res = await fetch(`https://younglabs-innovations-ysid.vercel.app/api/greet?name=${textValue}`,{
       method : 'GET',
       headers: {
         'Content-Type': 'application/json'
