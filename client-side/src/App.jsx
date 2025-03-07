@@ -10,7 +10,8 @@ function App() {
       method : 'GET',
       headers: {
         'Content-Type': 'application/json'
-      }
+      },
+      credentials: "include"
     });
     const data = await res.json();
     if(!data.message){
