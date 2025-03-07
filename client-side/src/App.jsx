@@ -22,11 +22,11 @@ function App() {
   
   return (
     <div className='flex flex-col gap-24 items-center h-screen w-full'>
-      <div className='mt-5 text-2xl font-poppinsMedium'>
+      <div className='max-xs:px-3 max-xs:text-xl mt-5 text-2xl font-poppinsMedium'>
         {value}
       </div>
       <div 
-        className='bg-red-300 border border-blue-600 justify-center rounded-xl h-72 w-1/2 flex items-center gap-5 flex-col'
+        className='max-xs:w-[70%] bg-red-300 border border-blue-600 justify-center rounded-xl h-72 w-1/2 flex items-center gap-5 flex-col'
       >
         <input
           type='text'

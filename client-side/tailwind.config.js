@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens:{
+      'xs': '420px',
+    },
     extend: {
       fontFamily:{
         poppinsLight : ['Poppins-light', 'sans-serif'],
